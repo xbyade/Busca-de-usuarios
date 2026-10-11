@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Projeto Teste</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div>
-    <button id="botao">Carregar usuários</button>
-</div>
+    <div class="container">
+        <h1>Aplicação de Usuários</h1>
 
-<div id="usuarios"></div>
-<p id="erro"></p>
+        <div class="card">
+            <label for="nome">Digite um nome:</label>
+            <div class="input-group">
+                <input type="text" name="nome" id="nome" placeholder="Ex: Leanne...">
+                <button id="buscar">Buscar</button>
+            </div>
+        </div>
 
-<label for="nome">Digite um nome:</label>
-<input type="text" name="nome" id="nome">
-<button id="buscar">Buscar</button>
+        <div class="card action-card">
+            <button id="botao">Carregar usuários</button>
+        </div>
 
-
+        <p id="erro"></p>
+        <div id="usuarios"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
